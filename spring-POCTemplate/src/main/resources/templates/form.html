@@ -1,0 +1,33 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+		<form th:action="@{/form}" th:object="${usuario}" method="post">
+		<div>
+			<label for="xml">XML</label>
+			<div>
+				<input id="xml" name="xml" type="text" >
+			</div>
+		</div>	
+		<div>
+			<label for="columnas">columnas</label>
+			<div>
+				<input id="columnas" name="columnas" type="number" >
+			</div>
+		</div>
+		<div>
+			<label for="filas">filas</label>
+			<div>
+				<input id="filas" name="filas" type="number" >
+			</div>
+		</div>
+		<div>
+			<input type="submit" value="Enviar">
+		</div>
+	</form>
+</body>
+</html>
